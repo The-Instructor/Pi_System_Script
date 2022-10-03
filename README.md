@@ -11,3 +11,7 @@
 1. The Team Leader should copy the sys_stats.sh file to the Raspberry Pi.
 2. Change the permissions to make the file executable.
 3. Run the script
+
+# Demonstrate for Credit
+1. Demonstrate to me that your script runs as expected.
+2. Show me the history of commits and pull requests to the master branch.
