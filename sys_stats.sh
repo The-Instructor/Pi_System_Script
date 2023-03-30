@@ -8,6 +8,8 @@
 # part 5 and 6 will be Tom
 
 # All output will be stored in ~/Documents/System_Stats
+mkdir -p ~/Documents/System_Stats # if system stats
+cd ~/Documents/System_Stats 
 
 # Make a directory called System_Stats and change directories to that directory
 # Try to make the output for each file look as neat and organized as you can.
@@ -48,9 +50,14 @@
 # 5 Output the following information to a file called block_dev
     # 1. Only the name, size, and type of the block devices
     # 2. The output should use ascii characters for any tree formatting
+touch block_dev
+lsblk -i -o 'SIZE,NAME,TYPE' > block_dev
     
     
 # 6 Output the following information to a file called sata
     # 1. Any Sata devices connected to the machine along with human readable sizes of the devices
     # 2. More specific information about each device that is connected to the machine
+
+
+
     
