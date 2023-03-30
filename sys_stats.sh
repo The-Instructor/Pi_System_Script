@@ -1,4 +1,4 @@
-# add shebang here
+#!\bin\bash add shebang here
 # add any contributor names in a comment here
 
 #************************************#
