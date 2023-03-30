@@ -8,6 +8,10 @@
 mkdir System_Stats 
 cd System_Stats
 
+# Make a directory called System_Stats and change directories to that directory
+# Try to make the output for each file look as neat and organized as you can.#!/bin/bash
+
+
 touch Kernel\ Name | touch Kernel\ Release | touch Kernel\ Version | touch The\ operating\ system
 
 
