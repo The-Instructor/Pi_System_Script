@@ -1,6 +1,7 @@
 # add shebang here
 #!/bin/bash
 # add any contributor names in a comment here
+#Alec Giroir, 
 
 #************************************#
 #******* OUTPUT SYSTEM STATS ********#
