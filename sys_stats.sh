@@ -18,10 +18,10 @@
 
     # uname
 
-# 1. uname 
-# 2. uname -r
-# 3. uname -v 
-# 4. uname -o 
+    # 1. uname 
+    # 2. uname -r
+    # 3. uname -v 
+    # 4. uname -o 
 
 
     # 1. Kernel Name
