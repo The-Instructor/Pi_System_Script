@@ -1,5 +1,7 @@
 # add shebang here
-# add any contributor names in a comment here
+# Evan (EvanKinard)
+# 
+# 
 
 #************************************#
 #******* OUTPUT SYSTEM STATS ********#
@@ -21,6 +23,7 @@
     
     
 # Output the following information to a file called disk.html
+sudo lshw -html -short -class disk > ./System_Stats/lshw.html
     # 1. All disks
     # 2. The output should include html tags, i.e. <html></html>
 
