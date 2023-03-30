@@ -1,5 +1,5 @@
 # add shebang here
-# add any contributor names in a comment here
+# Chloe
 
 #************************************#
 #******* OUTPUT SYSTEM STATS ********#
@@ -16,6 +16,7 @@
 
 
 # Output the following information to a file called network
+Cat> Network
     # 1. Do not print any serial numbers or sensitive information related to the system
     # 2. All network interfaces
     
