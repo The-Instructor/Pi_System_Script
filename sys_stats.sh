@@ -16,7 +16,7 @@
 
 
 
-# uname
+    # uname
 
     # 1. Kernel Name
     # 2. Kernel Release
