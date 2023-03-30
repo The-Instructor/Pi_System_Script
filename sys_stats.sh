@@ -1,4 +1,4 @@
-#!
+#!/bin/bash
 # add shebang here
 # add any contributor names in a comment here
 
@@ -28,11 +28,19 @@
 
 # Output the following information to a file called cpu
     # 1. The first five lines of the command lscpu
+    lscpu | head -5 >> cpu.txt
+    
+    echo "----------------------------------------------" >> cpu.txt
+    
     # 2. The last 12 lines of the command lscpu
+    lscpu | tail -12 >> cpu.txt
+    
     
 
 # Output the following information to a file called block_dev
     # 1. Only the name, size, and type of the block devices
+    
+    
     # 2. The output should use ascii characters for any tree formatting
     
     
