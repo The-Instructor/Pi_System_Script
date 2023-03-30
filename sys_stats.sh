@@ -11,6 +11,12 @@
 
 #uname
 
+# 1. uname 
+# 2. uname -r
+# 3. uname -v 
+# 4. uname -o 
+
+
     # 1. Kernel Name
     # 2. Kernel Release
     # 3. Kernel Version
