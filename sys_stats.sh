@@ -1,5 +1,4 @@
-# add shebang here
-# add any contributor names in a comment here
+#!/bin/bash
 
 #************************************#
 #******* OUTPUT SYSTEM STATS ********#
