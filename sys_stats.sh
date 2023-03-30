@@ -1,5 +1,5 @@
 #!/bin/bash
-# 
+# Angel Rodriguez, Jerry Terry, Chris Provenzano
 
 #************************************#
 #******* OUTPUT SYSTEM STATS ********#
