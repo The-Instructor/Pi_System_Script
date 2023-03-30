@@ -1,7 +1,7 @@
 # add shebang here
 #!/bin/bash
 # add any contributor names in a comment here
-#Alec Giroir, 
+#Alec Giroir, Emma Gentges, Roger Chang 
 
 #************************************#
 #******* OUTPUT SYSTEM STATS ********#
@@ -9,6 +9,8 @@
 
 # Make a directory called System_Stats and change directories to that directory
 # Try to make the output for each file look as neat and organized as you can.
+
+mk dir System_Stats | cd System_Stats 
 
 # Output the following information to a file called kernel
     # 1. Kernel Name
