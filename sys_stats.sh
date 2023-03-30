@@ -8,6 +8,7 @@
 #************************************#
 
 # Make a directory called System_Stats and change directories to that directory
+mkdir System_Stats
 # Try to make the output for each file look as neat and organized as you can.
 
 # Output the following information to a file called kernel
@@ -19,11 +20,15 @@
 
 # Output the following information to a file called network
     # 1. Do not print any serial numbers or sensitive information related to the system
+    # touch network
     # 2. All network interfaces
+    # lsscsi -s >> network - sudo lshw -class network -short
     
     
 # Output the following information to a file called disk.html
     # 1. All disks
+    # touch disk.html 
+    # sudo lshw -class disk >> disk.html
     # 2. The output should include html tags, i.e. <html></html>
 
 
