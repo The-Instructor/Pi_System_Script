@@ -4,8 +4,8 @@
 3. Follow the directions in the comments of the sys_stats.sh file.
 
 # Merging Your Changes
-1. Commit your changes to the sys_stats.sh file to your own branch.
-2. Then, create a pull request, so that your Team Leader can approve/decline the changes and merge the changes to their branch.
+1. Commit your changes to the sys_stats.sh file in your own branch.
+2. Then, create a pull request, so that your Team Leader can approve/decline the changes and merge your changes in their branch.
 
 # Running the Script
 1. The Team Leader should copy the sys_stats.sh file to the Raspberry Pi.
@@ -14,4 +14,4 @@
 
 # Demonstrate for Credit
 1. Demonstrate to me that your script runs as expected.
-2. Show me the history of commits and pull requests to the master branch.
+2. Show me the history of commits and pull requests in the master branch.
