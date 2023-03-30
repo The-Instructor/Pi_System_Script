@@ -8,6 +8,9 @@
 # Try to make the output for each file look as neat and organized as you can.
 
 # Output the following information to a file called kernel
+
+#uname
+
     # 1. Kernel Name
     # 2. Kernel Release
     # 3. Kernel Version
