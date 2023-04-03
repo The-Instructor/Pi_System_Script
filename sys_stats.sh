@@ -20,10 +20,10 @@ cd ~/Documents/System_Stats
 
     # uname
 
-    # 1. uname 
-    # 2. uname -r
-    # 3. uname -v 
-    # 4. uname -o 
+    # 1. uname = Shows kernel name
+    # 2. uname -r Shows current kernel release date 
+    # 3. uname -v Shows current kernel Version 
+    # 4. uname -o Shows kernel operating system 
 
 
     # 1. Kernel Name
