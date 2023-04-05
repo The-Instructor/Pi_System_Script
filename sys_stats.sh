@@ -10,32 +10,48 @@
 
 # Output the following information to a file called kernel
     # 1. Kernel Name
+    uname -s
+    echo 'uname -s'>> kernel
     # 2. Kernel Release
+    uname -r
+    echo 'uname -r'>> kernel
     # 3. Kernel Version
+    uname -v
+    echo 'uname -v'>> Kernel
     # 4. The operating system
-
-
+    uname -o
+    echo 'uname -0'>> kernel
 # Output the following information to a file called network
     # 1. Do not print any serial numbers or sensitive information related to the system
+    sudo lshw -short | sudo lshw -sanitize
+    echo 'sudo lshw -short | sudo lshw -sanitize'>> network
     # 2. All network interfaces
-    
-    
+    sudo lshw -class network or sudo lshw -html -class network
+    echo 'sudo lshw -class network'>> network
+    echo 'sudo lshw -html -class network'>> network
 # Output the following information to a file called disk.html
     # 1. All disks
+    sudo lshw -class disk -class storage
+    echo 'sudo lshw -class disk -class storage'>> disk.html
     # 2. The output should include html tags, i.e. <html></html>
-
-
+    sudo lshw -html -class network > lshw.html
+    echo 'sudo lshw -html -class network > lshw.html'>> disk.html
 # Output the following information to a file called cpu
     # 1. The first five lines of the command lscpu
+    lscpu | head -n 5
+    echo 'lscpu | head -n 5'>> cpu
     # 2. The last 12 lines of the command lscpu
-    
-
+    lscpu | tail -n 5
+    echo 'lscpu | tail -n 5'>> cpu
 # Output the following information to a file called block_dev
     # 1. Only the name, size, and type of the block devices
+    lsblk -o NAME,SIZE,TYPE -b
+    echo 'lsblk -o NAME,SIZE,TYPE -b'>> block_dev
     # 2. The output should use ascii characters for any tree formatting
-    
-    
+    lsblk -i
+    echo  'lsblk -i'>> block_dev
 # Output the following information to a file called sata
     # 1. Any Sata devices connected to the machine along with human readable sizes of the devices
+    
     # 2. More specific information about each device that is connected to the machine
     
