@@ -1,13 +1,16 @@
 # add shebang here
+#!/bin/bash
 # add any contributor names in a comment here
+Andrea_Spence
 
 #************************************#
 #******* OUTPUT SYSTEM STATS ********#
 #************************************#
 
 # Make a directory called System_Stats and change directories to that directory
+mkdir System_Stats
 # Try to make the output for each file look as neat and organized as you can.
-
+touch kernel network disk.html cpu block_dev sata
 # Output the following information to a file called kernel
     # 1. Kernel Name
     uname -s
@@ -17,7 +20,7 @@
     echo 'uname -r'>> kernel
     # 3. Kernel Version
     uname -v
-    echo 'uname -v'>> Kernel
+    echo 'uname -v'>> kernel
     # 4. The operating system
     uname -o
     echo 'uname -0'>> kernel
@@ -26,9 +29,9 @@
     sudo lshw -short | sudo lshw -sanitize
     echo 'sudo lshw -short | sudo lshw -sanitize'>> network
     # 2. All network interfaces
-    sudo lshw -class network or sudo lshw -html -class network
-    echo 'sudo lshw -class network'>> network
-    echo 'sudo lshw -html -class network'>> network
+    sudo lshw -class network | sudo lshw -sanitize or sudo lshw -html -class network | sudo lshw -sanitize
+    echo 'sudo lshw -class network | sudo lshw -sanitize'>> network
+    echo 'sudo lshw -html -class network | sudo lshw -sanitize'>> network
 # Output the following information to a file called disk.html
     # 1. All disks
     sudo lshw -class disk -class storage
