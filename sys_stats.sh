@@ -27,16 +27,14 @@ uname -o >> Kernel
     # 1. Do not print any serial numbers or sensitive information related to the system
     touch network
     # 2. All network interfaces
-    sudo su
-    lshw -class network -sanitize > network
+    sudo lshw -class network -sanitize > network
     
     
 # Output the following information to a file called disk.html
     # 1. All disks
     touch disk.html 
     # 2. The output should include html tags, i.e. <html></html>
-    sudo su
-    lshw -class disk -html > disk.html
+    sudo lshw -class disk -html > disk.html
 
 
 # Output the following information to a file called cpu
