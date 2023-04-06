@@ -23,7 +23,7 @@
     
     
 # Output the following information to a file called disk.html
-sudo lshw -html -short -class disk > ./System_Stats/lshw.html
+sudo lshw -html -short -class disk > ./System_Stats/disk.html
     # 1. All disks
     # 2. The output should include html tags, i.e. <html></html>
 
@@ -39,6 +39,6 @@ sudo lshw -html -short -class disk > ./System_Stats/lshw.html
     
     
 # Output the following information to a file called sata
+lsscsi -s > ./System_Stats/sata
     # 1. Any Sata devices connected to the machine along with human readable sizes of the devices
     # 2. More specific information about each device that is connected to the machine
-    
