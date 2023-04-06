@@ -39,12 +39,14 @@
 
 # Output the following information to a file called block_dev
     # 1. Only the name, size, and type of the block devices
-    
+    lsblk >> block_dev.txt
     
     # 2. The output should use ascii characters for any tree formatting
     
     
 # Output the following information to a file called sata
     # 1. Any Sata devices connected to the machine along with human readable sizes of the devices
+    parted -l >> sata.txt 
     # 2. More specific information about each device that is connected to the machine
+    lsblk >> sata.txt
     
