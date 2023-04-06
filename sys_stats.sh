@@ -16,7 +16,7 @@
 
 
 # Output the following information to a file called network
-Cat> Network
+lspci > ./System_Stats/network
     # 1. Do not print any serial numbers or sensitive information related to the system
     # 2. All network interfaces
     
@@ -34,7 +34,7 @@ Cat> Network
 # Output the following information to a file called block_dev
     # 1. Only the name, size, and type of the block devices
     # 2. The output should use ascii characters for any tree formatting
-    
+    lsblk -o SIZE,NAME,TYPE > ./System_Stats/block_dev
     
 # Output the following information to a file called sata
     # 1. Any Sata devices connected to the machine along with human readable sizes of the devices
