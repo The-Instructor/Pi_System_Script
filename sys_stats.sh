@@ -17,13 +17,14 @@ cd ~/Documents/System_Stats
 # 1 Output the following information to a file called kernel
 
 
+touch kernel
 
-    # uname
-
-    # 1. uname = Shows kernel name
-    # 2. uname -r Shows current kernel release date 
-    # 3. uname -v Shows current kernel Version 
-    # 4. uname -o Shows kernel operating system 
+uname  # Shows kernel name
+uname  # Shows current kernel release date 
+uname  > kernel # Shows current kernel Version 
+uname -r >> kernel 
+uname -v >> kernel 
+uname -o >> kernel 
 
 
     # 1. Kernel Name
@@ -35,6 +36,7 @@ cd ~/Documents/System_Stats
 # 2 Output the following information to a file called network
     # 1. Do not print any serial numbers or sensitive information related to the system
     # 2. All network interfaces
+ifconfig -s > network
     
     
 # 3 Output the following information to a file called disk.html
@@ -50,20 +52,14 @@ cd ~/Documents/System_Stats
 # 5 Output the following information to a file called block_dev
     # 1. Only the name, size, and type of the block devices
     # 2. The output should use ascii characters for any tree formatting
-
 touch block_dev
 lsblk -i -o 'SIZE,NAME,TYPE' > block_dev
     
     
 # 6 Output the following information to a file called sata
     # 1. Any Sata devices connected to the machine along with human readable sizes of the devices
-
-touch sata
 lsscsi -s | grep -i sata > sata
-
     # 2. More specific information about each device that is connected to the machine
-    
-sudo hdparm /dev/sda* >> sata
 
 
 
