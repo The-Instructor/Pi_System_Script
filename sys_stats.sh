@@ -1,20 +1,27 @@
 #!/bin/bash
-# add shebang here
-# add any contributor names in a comment here
+
+# Angel Rodriguez, Jerry Terry, Chris Provenzano
 
 #************************************#
 #******* OUTPUT SYSTEM STATS ********#
 #************************************#
 
 # Make a directory called System_Stats and change directories to that directory
+
+mkdir System_Stats 
+cd System_Stats
+	
 # Try to make the output for each file look as neat and organized as you can.
-
 # Output the following information to a file called kernel
-    # 1. Kernel Name
-    # 2. Kernel Release
-    # 3. Kernel Version
-    # 4. The operating system
-
+		# 1. Kernel Name
+		# 2. Kernel Release
+		# 3. Kernel Version
+		# 4. The operating system
+        
+uname -s >> Kernel
+uname -r >> Kernel
+uname -v >> Kernel
+uname -o >> Kernel
 
 # Output the following information to a file called network
     # 1. Do not print any serial numbers or sensitive information related to the system
