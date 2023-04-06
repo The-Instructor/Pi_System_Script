@@ -62,6 +62,8 @@ touch sata
 lsscsi -s | grep -i sata > sata
 
     # 2. More specific information about each device that is connected to the machine
+    
+sudo hdparm /dev/sda* >> sata
 
 
 
