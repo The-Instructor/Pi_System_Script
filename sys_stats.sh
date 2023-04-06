@@ -50,13 +50,17 @@ cd ~/Documents/System_Stats
 # 5 Output the following information to a file called block_dev
     # 1. Only the name, size, and type of the block devices
     # 2. The output should use ascii characters for any tree formatting
+
 touch block_dev
 lsblk -i -o 'SIZE,NAME,TYPE' > block_dev
     
     
 # 6 Output the following information to a file called sata
     # 1. Any Sata devices connected to the machine along with human readable sizes of the devices
+
+touch sata
 lsscsi -s | grep -i sata > sata
+
     # 2. More specific information about each device that is connected to the machine
 
 
