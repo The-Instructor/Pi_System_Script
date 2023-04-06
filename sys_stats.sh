@@ -38,6 +38,8 @@ mk dir System_Stats | cd System_Stats
     # 1. Only the name, size, and type of the block devices
     # 2. The output should use ascii characters for any tree formatting
     
+    lsblk -o NAME,SIZE,TYPE --ascii > block_dev 
+    
 # Output the following information to a file called sata
     # 1. Any Sata devices connected to the machine along with human readable sizes of the devices
     # 2. More specific information about each device that is connected to the machine
