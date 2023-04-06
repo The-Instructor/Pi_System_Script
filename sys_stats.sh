@@ -47,6 +47,8 @@
 # Output the following information to a file called sata
     # 1. Any Sata devices connected to the machine along with human readable sizes of the devices
     lsscsi >> stat.txt
+    
+    echo "----------------------------------------------" >> stat.txt
     # 2. More specific information about each device that is connected to the machine
     hostnamectl | sudo hdparm >> sata.txt
     
