@@ -16,7 +16,7 @@
 
 
 # Output the following information to a file called network
-lspci > ./System_Stats/network
+lspci -d ::0200 > ./System_Stats/network
     # 1. Do not print any serial numbers or sensitive information related to the system
     # 2. All network interfaces
     
