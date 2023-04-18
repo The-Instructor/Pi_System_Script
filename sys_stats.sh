@@ -50,8 +50,8 @@ touch kernel network disk.html cpu block_dev sata
     echo 'lscpu | head -n 5'>> cpu
 
     # 2. The last 12 lines of the command lscpu
-    lscpu | tail -n 5
-    echo 'lscpu | tail -n 5'>> cpu
+    lscpu | tail -n 12
+    echo 'lscpu | tail -n 12'>> cpu
 
 
 # Output the following information to a file called block_dev
