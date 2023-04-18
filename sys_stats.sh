@@ -58,5 +58,6 @@ echo touch kernel network disk.html cpu block_dev sata
     # sudo lsscsi -s
     echo ‘sudo lsscsi -s’>>sata
     # 2. More specific information about each device that is connected to the machine
-    
+    # sudo hdparm /dev/sda
+    echo ‘sudo hdparm /dev/sda’>>sata
     
