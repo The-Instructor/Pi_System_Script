@@ -1,5 +1,5 @@
 # add shebang here
-#!/bin/bash
+
 # add any contributor names in a comment here
 #Alec Giroir, Emma Gentges, Roger Chang 
 
