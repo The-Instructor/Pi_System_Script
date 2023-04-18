@@ -8,6 +8,7 @@
 #************************************#
 
 # Make a directory called System_Stats and change directories to that directory
+
 mkdir System_Stats
 # Try to make the output for each file look as neat and organized as you can.
 touch kernel network disk.html cpu block_dev sata
@@ -31,10 +32,11 @@ touch kernel network disk.html cpu block_dev sata
     sudo lshw -short | sudo lshw -sanitize
     echo 'sudo lshw -short | sudo lshw -sanitize'>> network
 
-    # 2. All network interfaces
-    sudo lshw -html -class network | sudo lshw -sanitize
-    echo 'sudo lshw -html -class network | sudo lshw -sanitize'>> network
-    
+
+# 2. All network interfaces
+   sudo lshw -html -class network | sudo lshw -sanitize
+   echo 'sudo lshw -html -class network | sudo lshw -sanitize'>> network
+
 # Output the following information to a file called disk.html
     # 1. All disks
     sudo lshw -class disk -class storage
@@ -42,7 +44,8 @@ touch kernel network disk.html cpu block_dev sata
 
     # 2. The output should include html tags, i.e. <html></html>
     sudo lshw -html -class network > lshw.html
-    echo 'sudo lshw -html -class network > lshw.html'>> disk.html
+
+     echo 'sudo lshw -html -class network > lshw.html'>> disk.html
 
 
 # Output the following information to a file called cpu
@@ -60,15 +63,17 @@ touch kernel network disk.html cpu block_dev sata
     lsblk -o NAME,SIZE,TYPE -b
     echo 'lsblk -o NAME,SIZE,TYPE -b'>> block_dev
 
-    # 2. The output should use ascii characters for any tree formatting
+
+# 2. The output should use ascii characters for any tree formatting
     lsblk -i
     echo  'lsblk -i'>> block_dev
 
-    
+
 # Output the following information to a file called sata
     # 1. Any Sata devices connected to the machine along with human readable sizes of the devices
     sudo lsscsi -s
     echo ‘sudo lsscsi -s’>>sata
+   
     # 2. More specific information about each device that is connected to the machine
     sudo hdparm /dev/sda
     echo ‘sudo hdparm /dev/sda’>>sata
