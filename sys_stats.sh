@@ -22,7 +22,7 @@
     echo 'uname -v'>> kernel
     # 4. The operating system
     uname -o
-    echo 'uname -0'>> kernel
+    echo 'uname -o'>> kernel
 
 
 # Output the following information to a file called network
