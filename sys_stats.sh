@@ -1,5 +1,7 @@
 # add shebang here
-# Chloe
+!#
+# add any contributor names in a comment here
+#Paul Dolezal
 
 #************************************#
 #******* OUTPUT SYSTEM STATS ********#
@@ -7,13 +9,14 @@
 
 # Make a directory called System_Stats and change directories to that directory
 # Try to make the output for each file look as neat and organized as you can.
+mkdir System_Stats 
 
 # Output the following information to a file called kernel
     # 1. Kernel Name
     # 2. Kernel Release
     # 3. Kernel Version
     # 4. The operating system
-
+uname -r -v -o > ./System_Stats/sys_info 
 
 # Output the following information to a file called network
 lspci -d ::0200 > ./System_Stats/network
@@ -29,7 +32,8 @@ lspci -d ::0200 > ./System_Stats/network
 # Output the following information to a file called cpu
     # 1. The first five lines of the command lscpu
     # 2. The last 12 lines of the command lscpu
-    
+lscpu | head -n 5 > ./System_Stats/cpu 
+lscpu | tail -n 12 >> ./System_Stats/cpu 
 
 # Output the following information to a file called block_dev
     # 1. Only the name, size, and type of the block devices
