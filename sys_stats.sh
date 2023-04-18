@@ -1,6 +1,7 @@
 # add shebang here
 
 #!/bin/bash
+
 # add any contributor names in a comment here
 #Alec Giroir, Emma Gentges, Roger Chang 
 
@@ -10,6 +11,8 @@
 
 # Make a directory called System_Stats and change directories to that directory
 # Try to make the output for each file look as neat and organized as you can.
+mkdir System_Stats
+cd System_Stats || exit
 
 mk dir System_Stats | cd System_Stats 
 
@@ -18,11 +21,12 @@ mk dir System_Stats | cd System_Stats
     # 2. Kernel Release
     # 3. Kernel Version
     # 4. The operating system
-
+uname -a > kernal
 
 # Output the following information to a file called network
     # 1. Do not print any serial numbers or sensitive information related to the system
     # 2. All network interfaces
+ip link show > network
     
     
 # Output the following information to a file called disk.html
