@@ -28,7 +28,7 @@
     sudo lshw -short | sudo lshw -sanitize
     echo 'sudo lshw -short | sudo lshw -sanitize'>> network
     # 2. All network interfaces
-    sudo lshw -class network | sudo lshw -sanitize or sudo lshw -html -class network | sudo lshw -sanitize
+   sudo lshw -html -class network | sudo lshw -sanitize
     echo 'sudo lshw -class network | sudo lshw -sanitize'>> network
 
 # Output the following information to a file called disk.html
