@@ -55,6 +55,8 @@ echo touch kernel network disk.html cpu block_dev sata
     echo  'lsblk -i'>> block_dev
 # Output the following information to a file called sata
     # 1. Any Sata devices connected to the machine along with human readable sizes of the devices
-    
+    # sudo lsscsi -s
+    echo ‘sudo lsscsi -s’>>sata
     # 2. More specific information about each device that is connected to the machine
+    
     
