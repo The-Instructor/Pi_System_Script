@@ -14,8 +14,6 @@
 mkdir System_Stats
 cd System_Stats || exit
 
-mk dir System_Stats | cd System_Stats 
-
 # Output the following information to a file called kernel
     # 1. Kernel Name
     # 2. Kernel Release
