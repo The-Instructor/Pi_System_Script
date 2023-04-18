@@ -39,9 +39,9 @@
     sudo lshw -class disk -class storage
     echo 'sudo lshw -class disk -class storage'>> disk.html
 
-# 2. The output should include html tags, i.e. <html></html>
+    # 2. The output should include html tags, i.e. <html></html>
     sudo lshw -html -class network > lshw.html
-    echo 'sudo lshw -html -class network > lshw.html'>> disk.html
+     echo 'sudo lshw -html -class network > lshw.html'>> disk.html
 
 
 # Output the following information to a file called cpu
@@ -49,9 +49,9 @@
     lscpu | head -n 5
     echo 'lscpu | head -n 5'>> cpu
 
-# 2. The last 12 lines of the command lscpu
-    lscpu | tail -n 5
-    echo 'lscpu | tail -n 5'>> cpu
+    # 2. The last 12 lines of the command lscpu
+    lscpu | tail -n 12
+    echo 'lscpu | tail -n 12'>> cpu
 
 
 # Output the following information to a file called block_dev
@@ -68,7 +68,7 @@
     sudo lsscsi -s
     echo ‘sudo lsscsi -s’>>sata
    
-   # 2. More specific information about each device that is connected to the machine
+    # 2. More specific information about each device that is connected to the machine
     sudo hdparm /dev/sda
     echo ‘sudo hdparm /dev/sda’>>sata
     
