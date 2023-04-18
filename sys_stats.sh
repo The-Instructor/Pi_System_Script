@@ -27,12 +27,13 @@ mk dir System_Stats | cd System_Stats
 # Output the following information to a file called disk.html
     # 1. All disks
     # 2. The output should include html tags, i.e. <html></html>
-
+sudo lshw -class disk -html > disk.html
 
 # Output the following information to a file called cpu
     # 1. The first five lines of the command lscpu
     # 2. The last 12 lines of the command lscpu
-    
+    lscpu|head -n 5 > cpu
+    lscpu|tail -n 12 > cpu
 
 # Output the following information to a file called block_dev
     # 1. Only the name, size, and type of the block devices
