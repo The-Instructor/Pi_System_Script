@@ -12,23 +12,23 @@
  touch kernel network disk.html cpu block_dev sata
 # Output the following information to a file called kernel
     # 1. Kernel Name
-    # uname -s
+    uname -s
     echo 'uname -s'>> kernel
     # 2. Kernel Release
-    # uname -r
+    uname -r
     echo 'uname -r'>> kernel
     # 3. Kernel Version
-    # uname -v
+    uname -v
     echo 'uname -v'>> kernel
     # 4. The operating system
-    # uname -o
+    uname -o
     echo 'uname -0'>> kernel
 # Output the following information to a file called network
     # 1. Do not print any serial numbers or sensitive information related to the system
-    # sudo lshw -short | sudo lshw -sanitize
+    sudo lshw -short | sudo lshw -sanitize
     echo 'sudo lshw -short | sudo lshw -sanitize'>> network
     # 2. All network interfaces
-    # sudo lshw -class network | sudo lshw -sanitize or sudo lshw -html -class network | sudo lshw -sanitize
+    sudo lshw -class network | sudo lshw -sanitize or sudo lshw -html -class network | sudo lshw -sanitize
     echo 'sudo lshw -class network | sudo lshw -sanitize'>> network
     echo 'sudo lshw -html -class network | sudo lshw -sanitize'>> network
 # Output the following information to a file called disk.html
