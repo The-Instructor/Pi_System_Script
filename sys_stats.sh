@@ -1,7 +1,7 @@
 # add shebang here
 !#
 # add any contributor names in a comment here
-#Paul Dolezal
+#Paul Dolezal, Evan Kinard, Chloe Pacheco
 
 #************************************#
 #******* OUTPUT SYSTEM STATS ********#
