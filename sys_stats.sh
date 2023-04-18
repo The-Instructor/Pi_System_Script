@@ -8,9 +8,9 @@ Andrea_Spence
 #************************************#
 
 # Make a directory called System_Stats and change directories to that directory
- echo mkdir System_Stats
+ mkdir System_Stats
 # Try to make the output for each file look as neat and organized as you can.
-echo touch kernel network disk.html cpu block_dev sata
+ touch kernel network disk.html cpu block_dev sata
 # Output the following information to a file called kernel
     # 1. Kernel Name
     # uname -s
