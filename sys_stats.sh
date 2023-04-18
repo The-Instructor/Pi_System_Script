@@ -25,6 +25,7 @@ lspci -d ::0200 > ./System_Stats/network
     
     
 # Output the following information to a file called disk.html
+sudo lshw -html -short -class disk > ./System_Stats/disk.html
     # 1. All disks
     # 2. The output should include html tags, i.e. <html></html>
 
@@ -41,6 +42,6 @@ lscpu | tail -n 12 >> ./System_Stats/cpu
 lsblk -o SIZE,NAME,TYPE > ./System_Stats/block_dev
     
 # Output the following information to a file called sata
+lsscsi -s > ./System_Stats/sata
     # 1. Any Sata devices connected to the machine along with human readable sizes of the devices
     # 2. More specific information about each device that is connected to the machine
-    
